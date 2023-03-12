@@ -117,7 +117,7 @@ label {
 
 }
 
-@media (width <=320px) {
+@media (width <=327px) {
   .accordion input[type="radio"]:hover+label>.image {
 
     height: 5em;
@@ -130,7 +130,7 @@ label {
   }
 
   label {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   h1 {
@@ -152,11 +152,30 @@ label {
   }
 
   label {
-    font-size: 1.35em;
+    font-size: 1.2em;
   }
 
   h1 {
     font-size: 1.7em;
     padding-left: 0.5em;
+  }
+}
+@media (400px < height < 700px){
+  label{font-size: 1.1em;}
+  .crt1 {
+    height: 1.6em;
+    width: 1.6em;
+    padding: 0.4em
+  }
+}
+
+
+@media ( height < 400px){
+  label{font-size: 1em;
+  }
+  .crt1 {
+    height: 1.4em;
+    width: 1.4em;
+    padding: 0.4em
   }
 }
