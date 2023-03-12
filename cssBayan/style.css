@@ -1,0 +1,181 @@
+.general {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  height: 100%;
+  color: #3813cd;
+  transition: all 1s;
+
+}
+
+.general:hover {
+  color: #383838;
+}
+
+.general:hover>.accordion>label>.header>span {
+  display: block;
+}
+
+.genHeader {
+
+  border-bottom: 2px solid #fecc65;
+  width: 100%;
+}
+
+h1 {
+  padding-left: 0.5em;
+}
+
+.header {
+  height: 4vh;
+  align-items: center;
+  display: flex;
+  padding-left: 2em;
+  justify-content: space-between;
+}
+
+label {
+
+  width: 100%;
+  text-align: left;
+  font-size: 1.5em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.crt {
+  display: none;
+  transition: all 1s;
+}
+
+
+.accordion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("reactor_bg_middle.jpg");
+  border-bottom: 0.2em solid rgba(0, 0, 0, 0.151);
+  border-radius: 0.5em;
+}
+
+.accordion input[type="radio"] {
+  display: none;
+}
+
+.crt1 {
+  height: 2em;
+  width: 2em;
+  padding: 0.1em
+}
+
+.image {
+  height: 0;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  transition: all 1s;
+
+}
+
+#ert {
+  width: 1em;
+  height: 1em;
+  padding-top: 0.5em;
+}
+
+.img1 {
+  padding: 2%;
+  object-fit: contain;
+  max-width: 95%;
+  max-height: min-content;
+}
+
+.accordion input[type="radio"]:hover+label>.image {
+
+  height: 20em;
+}
+
+.accordion input[type="radio"]:checked+label>.image {
+
+  height: 20em;
+
+}
+
+.accordion input[type="radio"]:checked+label>.header>span {
+  transform: rotate(45deg);
+  padding: 0.1em;
+  max-width: 100%;
+}
+
+.accordion input[type="radio"]:hover+label>.header>span {
+  transform: rotate(45deg);
+  padding: 0.1em;
+  max-width: 100%;
+
+}
+
+@media (width <=327px) {
+  .accordion input[type="radio"]:hover+label>.image {
+
+    height: 5em;
+  }
+
+  .accordion input[type="radio"]:checked+label>.image {
+
+    height: 5em;
+
+  }
+
+  label {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    padding-left: 0.5em;
+  }
+}
+
+@media (320px < width <=820px) {
+  .accordion input[type="radio"]:hover+label>.image {
+
+    height: 10em;
+  }
+
+  .accordion input[type="radio"]:checked+label>.image {
+
+    height: 10em;
+
+  }
+
+  label {
+    font-size: 1.2em;
+  }
+
+  h1 {
+    font-size: 1.7em;
+    padding-left: 0.5em;
+  }
+}
+@media (400px < height < 700px){
+  label{font-size: 1.1em;}
+  .crt1 {
+    height: 1.6em;
+    width: 1.6em;
+    padding: 0.4em
+  }
+}
+
+
+@media ( height < 400px){
+  label{font-size: 1em;
+  }
+  .crt1 {
+    height: 1.4em;
+    width: 1.4em;
+    padding: 0.4em
+  }
+}
