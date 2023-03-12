@@ -12,8 +12,13 @@
 
 }
 
-.general:hover {color: #383838;}
-.general:hover > .accordion >label > .header > span {display: block;}
+.general:hover {
+  color: #383838;
+}
+
+.general:hover>.accordion>label>.header>span {
+  display: block;
+}
 
 .genHeader {
 
@@ -40,6 +45,7 @@ label {
   font-size: 1.5em;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .crt {
   display: none;
   transition: all 1s;
@@ -59,7 +65,12 @@ label {
   display: none;
 }
 
-.crt1 {height: 2em;width: 2em; padding: 0.1em}
+.crt1 {
+  height: 2em;
+  width: 2em;
+  padding: 0.1em
+}
+
 .image {
   height: 0;
   align-self: center;
@@ -68,8 +79,19 @@ label {
   transition: all 1s;
 
 }
-#ert {width: 1em; height: 1em; padding-top: 0.5em;}
-.img1 {padding: 2%; object-fit: contain; max-width: 95%; max-height: min-content;}
+
+#ert {
+  width: 1em;
+  height: 1em;
+  padding-top: 0.5em;
+}
+
+.img1 {
+  padding: 2%;
+  object-fit: contain;
+  max-width: 95%;
+  max-height: min-content;
+}
 
 .accordion input[type="radio"]:hover+label>.image {
 
@@ -79,46 +101,62 @@ label {
 .accordion input[type="radio"]:checked+label>.image {
 
   height: 20em;
-  
+
 }
 
-.accordion input[type="radio"]:checked+label> .header >span {
+.accordion input[type="radio"]:checked+label>.header>span {
   transform: rotate(45deg);
   padding: 0.1em;
   max-width: 100%;
 }
-.accordion input[type="radio"]:hover+label> .header >span {
+
+.accordion input[type="radio"]:hover+label>.header>span {
   transform: rotate(45deg);
   padding: 0.1em;
   max-width: 100%;
 
 }
-@media (width <= 320px){
+
+@media (width <=320px) {
   .accordion input[type="radio"]:hover+label>.image {
 
     height: 5em;
   }
+
   .accordion input[type="radio"]:checked+label>.image {
 
     height: 5em;
-    
+
+  }
+
+  label {
+    font-size: 1.2em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    padding-left: 0.5em;
   }
 }
-@media (320px < width <= 820px){
+
+@media (320px < width <=820px) {
   .accordion input[type="radio"]:hover+label>.image {
 
     height: 10em;
   }
+
   .accordion input[type="radio"]:checked+label>.image {
 
     height: 10em;
-    
+
+  }
+
+  label {
+    font-size: 1.35em;
+  }
+
+  h1 {
+    font-size: 1.7em;
+    padding-left: 0.5em;
   }
 }
-@media (width < 450px){
-  
-  label {font-size: 1.2em;}
-  h1{font-size: 1.5em;
-  padding-left: 0.5em;}
-}
-
